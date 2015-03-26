@@ -1,0 +1,401 @@
+/*
+	Theme Name: Lauren Black Portfolio
+	Theme URI: http://lauren-black.com
+	Descrtiption: Custom design by Lauren Black
+	Author: Adam Carter
+	Author URI: http://www.adamkristopher.com
+	Version: 1.0
+	Tags: custom, adaptive, responsive
+*/
+
+@import url( //fonts.googleapis.com/css?family=Oswald:400,700,300 );
+@import url( //fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic );
+
+body {
+	margin: 0;
+	font-family: 'Oswald', sans-serif, helvetica;
+	background-color: #fff;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+/*--input placeholder text for email form--*/
+	::-webkit-input-placeholder {
+	color: #5e5e5e;
+	font-family: 'Arvo', sans-serif, helvetica;
+
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	color: #5e5e5e;
+	font-family: 'Arvo', sans-serif, helvetica;
+
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	color: #5e5e5e;
+	font-family: 'Arvo', sans-serif, helvetica;
+
+}
+
+:-ms-input-placeholder {
+	color: #5e5e5e;
+	font-family: 'Arvo', sans-serif, helvetica;
+
+}
+
+h1 {
+	margin: 0 0;
+	font-size: 60px;
+}
+
+h2 {
+	margin: 0 0;
+	font-size: 28px;
+}
+
+h3 {
+	margin: 0 0;
+	font-size: 25px;
+}
+
+h4 {
+	margin: 0 0;
+	font-size: 24px;
+}
+
+h5 {
+	margin: 0 0;
+	font-size: 15px;
+}
+
+p {
+	font-family: 'Arvo', sans-serif, helvetica;
+	color: #5e5e5e;
+}
+
+/*===================================
+ * Header Elements
+ ==================================*/
+.logo {
+	margin-top: 50px;
+	text-align: center;
+}
+
+@media only screen and ( max-width: 601px ) {
+	img {
+		width: 100%;
+	}
+}
+
+/*===================================
+ * Navigation
+ ==================================*/
+nav {
+	text-align: center;
+}
+
+nav ul li {
+	padding-right: 55px;
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 26px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #5e5e5e;
+}
+
+nav ul li a:hover {
+	color: #f1552a;
+}
+/*===================================
+ * Single Work Page
+ ==================================*/
+
+/*===================================
+ * Homepage Content
+ ==================================*/
+.feature-project {
+	padding: 50px 50px 0 50px;
+	position: relative;
+}
+
+.single-project {
+	position: relative;
+	text-align: center;
+}
+
+.feature-hover {
+	display: none;
+	position: absolute;
+	z-index: 2;
+	top: 66%;
+	left: 62%;
+}
+
+.single-hover {
+	display: none;
+	position: absolute;
+	z-index: 2;
+	top: 0%;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.single-hover h3 {
+	margin-top: 20%;
+	margin-left: 8%;
+	margin-right: 70px;
+	border-bottom: 2px solid;
+	border-color: #f1552a;
+}
+
+.single-hover h5 {
+	margin-left: 8%;
+}
+
+.single-hover h3,
+.single-hover h5,
+.feature-hover h1,
+.feature-hover h3 {
+	color: #fff;
+	font-weight: 400;
+}
+
+.single-project img ,
+.feature-project img {
+	width: 100%;
+	height: 100%;
+}
+
+/*===================================
+ * About Page Content
+ ==================================*/
+
+/*===================================
+ * Portfolio Page Content
+ ==================================*/
+.gallery-categories {
+	padding-top: 40px;
+	margin-bottom: -20px;
+	text-align: center;
+}
+
+.gallery-categories ul li {
+	padding-right: 40px;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.gallery-categories ul li a {
+	text-transform: uppercase;
+	font-size: 20px;
+	text-decoration: none;
+	color: #5e5e5e;
+}
+
+.gallery-categories ul li a:hover {
+	color: #f1552a;
+}
+
+.single-work {
+	position: relative;
+}
+
+.gallery-hover {
+	display: none;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+/*===================================
+ * Service Page
+ ==================================*/
+
+/*===================================
+ * Contact
+ ==================================*/
+
+
+/*===================================
+ * Blog
+ ==================================*/
+
+
+/*===================================
+ * Footer
+ ==================================*/
+footer {
+	margin-bottom: 30px;
+}
+
+footer .footer-form .turn-key {
+	padding: 34px 50px 0 50px;
+}
+
+footer .footer-form .turn-key h2 {
+	margin: 0 0;
+	color: #f1552a;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+footer .footer-form .email-form {
+	padding: 0 50px 0px 50px;
+}
+
+footer .footer-section .icon-header {
+	margin-left: 50px;
+	margin-top: -30px
+}
+
+footer .footer-section .ss-icon {
+	margin-left: -16px;
+	margin-top: -26px
+}
+
+footer .footer-section .ss-icon a {
+	margin-right: 15px;
+	text-decoration: none;
+	color: #5e5e5e;
+	font-size: 24px;
+}
+
+footer .footer-section .ss-icon a:hover {
+	color: #f1552a;
+}
+
+footer .footer-section .icon-header h4 {
+	text-transform: uppercase;
+	color: #5e5e5e;
+	font-weight: 400;
+}
+
+footer .copyright h5 {
+	margin-top: 20px;
+	padding-left: 50px;
+	text-transform: uppercase;
+	color: #5e5e5e;
+	font-weight: 400;
+}
+
+/*--button top padding--*/
+.gform_wrapper .gform_footer {
+	padding: 15px 0 0 0 !important;
+	margin: 0 !important;
+}
+
+/*--form button--*/
+body .gform_wrapper .gform_footer input[type=submit] {
+	float: right;
+	background-color: #f1552a;
+	color: #fff;
+	border-radius: 9px;
+	padding: 5px 15px;
+}
+
+/*--input field border--*/
+body .gform_wrapper .gform_body .gform_fields .gfield input[type=text],
+body .gform_wrapper .gform_body .gform_fields .gfield .ginput_container textarea {
+	margin-bottom: 0px;
+	border: 2px solid #5e5e5e;
+	border-radius: 5px;
+}
+
+.name-field {
+	padding: 20px 50px;
+}
+
+/*--name input field magrin--*/
+.gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield span.name_first {
+	width: 104%;
+}
+
+
+/*===================================
+ * Media Quires
+ ==================================*/
+@media only screen and ( max-width: 1200px ) {
+
+}
+
+@media only screen and ( max-width: 1128px ) {
+	footer .footer-section {
+		text-align: center;
+	}
+
+	footer .footer-section .icon-header {
+		margin-left: 0px;
+		margin-top: 0px
+	}
+
+	footer .footer-section .ss-icon {
+		margin-left: 0px;
+		margin-top: 0px
+	}
+
+	footer .copyright h5 {
+		margin-top: 20px;
+		padding-left: 0px;
+	}
+}
+
+@media only screen and ( max-width: 961px ) {
+
+}
+
+@media only screen and ( max-width: 865px ) {
+
+}
+
+@media only screen and ( max-width: 801px ) {
+
+}
+
+@media only screen and ( max-width: 724px ) {
+
+}
+
+@media only screen and ( max-width: 670px ) {
+
+}
+
+@media only screen and ( max-width: 619px ) {
+
+}
+
+@media only screen and ( max-width: 569px ) {
+
+}
+
+@media only screen and ( max-width: 522px ) {
+
+}
+
+@media only screen and ( max-width: 480px ) {
+	body .gform_wrapper .gform_footer input[type=submit] {
+		float: none;
+	}
+}
+
+@media only screen and ( max-width: 422px ) {
+
+}
+
+@media only screen and ( max-width: 410px ) {
+
+}
+
+@media only screen and ( max-width: 390px ) {
+
+}
+
