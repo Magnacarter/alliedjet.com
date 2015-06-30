@@ -1,35 +1,41 @@
-		<footer>
+			<footer>
 
-			<div class="footer-form grid-container">
-				<div class="turn-key grid-55">
-					<h2>Let's Talk Turnkey</h2>
-					<HR WIDTH="100%" COLOR="#f1552a" SIZE="2">
-					<p>Have questions comments or just want to say "hi"? Just fill out the boxes on the right and we'll be on our way to some great work!</p>
-				</div>
-				<div class="email-form grid-45">
-					<?php the_field( 'email_form', 'options' ) ?>
-				</div>
-			</div>
-			<div class="footer-section grid-container">
-				<div class="copyright grid-55">
-					<h5>&copy;<?php echo date('Y'); ?> Lauren Black</h5>
-				</div>
-				<div class="icons">
-					<div class="icon-header grid-15">
-						<h4>Follow me on:</h4>
+				<HR WIDTH="100%" COLOR="white" SIZE="1">
+
+				<style type="text/css">
+					footer {
+						background-color: <?php the_field( 'footer_color', 'options' ) ?>;
+					}
+				</style>
+
+				<div class="footer-content grid-container">
+
+					<div class="company-name grid-50">
+						<h4><a href="<?php echo esc_url( get_home_url() ) ?>"><?php echo esc_html( get_bloginfo( 'name' ) ) ?></a></h4>
 					</div>
-					<div class="ss-icon grid-15">
-						<a href="">&#xF641;</a>
-						<a href="">&#xF650;</a>
-						<a href="">&#xF612;</a>
-						<a href="">&#xF661;</a>
+
+					<div id="social-links" class="ss-icon grid-50">
+						<a href="<?php the_field( 'facebook_link', 'options' ) ?>" target="_blank">&#xF610;</a>
+						<a href="<?php the_field( 'twitter_link', 'options' ) ?>" target="_blank">&#xF611;</a>
+						<a href="<?php the_field( 'linkedin_link', 'options' ) ?>" target="_blank">&#xF612;</a>
+						<a href="<?php the_field( 'instagram_link', 'options' ) ?>" target="_blank">&#xF641;</a>
+					</div>
+
+				</div>
+
+				<div class="copyright-wrap grid-container">
+					<div class="copyright grid-50">
+						<h5>&copy;<?php echo date('Y ') ?><a href="<?php echo esc_url( get_home_url() ) ?>"><?php echo esc_html( get_bloginfo( 'name' ) ) ?></a></h5>
+					</div>
+
+					<div class="footer-description-wrap grid-50">
+						<h5><?php echo esc_html( get_bloginfo( 'description' ) )?></h5>
 					</div>
 				</div>
-			</div>
 
-		</footer>
+			</footer>
 
-	<?php wp_footer(); ?>
+		<?php wp_footer() ?>
 
 	</body>
 

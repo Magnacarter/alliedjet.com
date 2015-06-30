@@ -1,40 +1,37 @@
 jQuery( document ).ready( function($) {
+	//Flexslider
+	$(window).load(function() {
+		$('.flexslider').flexslider({
+			slideshowSpeed: 10000,
+			controlNav: true,
+			directionNav: false,
+			animationSpeed: 1000,
+			direction: "horizontal",
+			animation: "slide", //String: Select your animation type, "fade" or "slide"
+			prevText: "", //String: Set the text for the "previous" directionNav item
+			nextText: "",
+		});
+	});
 
-	//Hover elements for feature project
-	var featureProject = $( '.feature-project' );
+	//Sub nav appear slow.
+	var $navServices = $( 'nav ul li' );
+	var $subMenu = $( 'nav ul ul' );
 
-	featureProject.hover(
+	$navServices.hover(
 		function() {
-			$( this ).find( '.feature-hover' ).fadeIn(400);
-		},
-		function() {
-			$( this ).find( '.feature-hover' ).fadeOut(400);
+			$( this ).find( $subMenu ).slideToggle(400);
 		}
 	);
 
-	//Hover elements for single projects
-	var featureProject = $( '.single-project' );
+	//Push Menu for tablet and mobile
+	$('.toggle-menu').jPushMenu();
 
-	featureProject.hover(
-		function() {
-			$( this ).find( '.single-hover' ).fadeIn(400);
-		},
-		function() {
-			$( this ).find( '.single-hover' ).fadeOut(400);
-		}
-	);
+	//Hamburger navigation
+	var hamburger = $( '.hamburger a' );
+	var toggle_menu = $( '.toggle_menu' );
+	hamburger.click( function( e ) {
+		e.preventDefault();
+		toggle_menu.slideToggle( 'slow' );
+	});
 
-	//Hover elements for single projects
-	var featureProject = $( '.single-work' );
-
-	featureProject.hover(
-		function() {
-			$( this ).find( '.gallery-hover' ).fadeIn(400);
-		},
-		function() {
-			$( this ).find( '.gallery-hover' ).fadeOut(400);
-		}
-	);
-
-});
-
+});//Document ready end.
