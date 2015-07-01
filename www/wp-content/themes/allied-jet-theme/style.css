@@ -952,6 +952,10 @@ ul.footer-location-list {
 		height: 100%;
 	}
 
+	.aj-footer-menu {
+		display: none;
+	}
+
 	.copyright-wrap {
 		padding-bottom: 4%;
 	}
