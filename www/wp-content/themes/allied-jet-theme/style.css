@@ -837,12 +837,12 @@ ul.footer-location-list li {
 
 .copyright {
 	text-align: center;
-	padding-right: 13%;
+	padding-right: 14%;
 }
 
 @media only screen and ( max-width: 1280px ) {
 	.copyright-wrap {
-		padding-right: 2%;
+		padding-right: 1%;
 	}
 }
 
