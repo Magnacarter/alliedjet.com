@@ -835,9 +835,14 @@ ul.footer-location-list li {
 	padding-right: 12%;
 }
 
+.copyright {
+	text-align: center;
+	padding-right: 13%;
+}
+
 @media only screen and ( max-width: 1280px ) {
 	.copyright-wrap {
-		padding-right: 13%;
+		padding-right: 2%;
 	}
 }
 
@@ -872,6 +877,11 @@ ul.footer-location-list li {
 
 	.copyright-wrap {
 		padding: 4% 0;
+	}
+
+	.copyright {
+		text-align: center;
+		padding-right: 0%;
 	}
 
 	.footer-location-list {
