@@ -73,6 +73,10 @@ li {
 	list-style: none;
 }
 
+.header-boarder {
+	border-top: 8px solid #701f15;
+}
+
 .aj-page-content-wrap {
 	margin: .5% 0;
 	border-bottom: 8px solid #701f15;
@@ -83,46 +87,34 @@ li {
 	background-color: #ffffff;
 	height: 10%;
 	width: 100%;
-	border-bottom: 8px solid #701f15;
 }
 
 .header-locations {
-	float: right;
-	padding-right: 5%;
 	padding-top: 3%;
 }
 
 .header-locations h3 {
-	padding-left: 24%;
+	text-align: right;
 	font-size: 16px;
 	text-transform: uppercase;
 	color: #701f15;
 }
 
 .header-locations h4 {
-	float: right;
-	padding: 2% 0 0 75%;
+	text-align: right;
 	font-size: 13px;
 	color: #707171;
 }
 
 .header-locations .location-list {
 	padding-top: 1%;
-	float: right;
+	text-align: right;
 	display: block;
 }
 
 .header-locations ul li {
 	color: #707171;
 	font-size: 11px;
-}
-
-.location-two {
-	padding-left: 79px;
-}
-
-.location-three {
-	padding-left: 32px;
 }
 
 .header-logo {
@@ -134,49 +126,21 @@ li {
 	text-decoration: none;
 }
 
-@media only screen and ( max-width: 1280px ) {
-	.header-locations h3 {
-		padding-left: 16%;
+
+@media only screen and ( max-width: 1275px ) {
+	.header-locations {
+		padding-right: 5%;
 	}
 }
 
-@media only screen and ( max-width: 1279px ) {
+@media only screen and ( max-width: 1095px ) {
 	.header-locations h3 {
-		padding-left: 0%;
-	}
-}
-
-@media only screen and ( max-width: 1273px ) {
-	.header-locations .location-list {
-		padding: 1% 0 0 0;
-		float: none;
-		text-align: center
-	}
-
-	.location-two,
-	.location-three {
-		padding-left: 0px;
-	}
-
-	.header-locations h4 {
-		padding: 0 0 0 0;
-		float: none;
-		text-align: center;
+		font-size: 12px;
 	}
 
 	.header-locations {
-		padding-right: 0%;
-		padding-top: 3%;
-	}
-
-	.header-locations h3 {
-		padding-left: 0%;
-	}
-}
-
-@media only screen and ( max-width: 766px ) {
-	.header-locations {
-		padding: 0% 0 0 0;
+		float: right;
+		padding: 2% 5% 2% 0;
 	}
 }
 
@@ -761,11 +725,12 @@ input#s {
  * Footer
  ==================================*/
 footer {
-	background-size: cover;
 	border-top: 8px solid #701f15;
 	height: 300px;
-	background-repeat: no-repeat;
+}
 
+footer .footer-content {
+	padding: 0 20px;
 }
 
 footer a {
@@ -796,29 +761,6 @@ footer .copyright h5 a:hover {
 	transition: color 0.5s ease;
 }
 
-footer h4 a {
-	font-size: 34px;
-	font-weight: 400;
-	color: #ffffff;
-	-webkit-transition: color 0.5s ease;
-	-moz-transition: color 0.5s ease;
-	-o-transition: color 0.5s ease;
-	transition: color 0.5s ease;
-}
-
-footer h4 a:hover {
-	color: #38100A;
-	-webkit-transition: color 0.5s ease;
-	-moz-transition: color 0.5s ease;
-	-o-transition: color 0.5s ease;
-	transition: color 0.5s ease;
-}
-
-footer h5 {
-	margin-top: 0px;
-	color: #2e2e2e;
-}
-
 .footer-content h3,
 .footer-content a,
 .footer-content ul li a,
@@ -828,34 +770,34 @@ footer h5 {
 	color: #701f15;
 }
 
-.footer-contact .footer-contact-us {
-	margin-left: 13%;
-	width: 69%;
+ul.footer-location-list {
+	padding: 0 !important;
+}
+
+#menu-footer-nav {
+	padding: 0;
+}
+
+h3.footer-contact-us {
+	margin-left: 110px;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	padding-top: 9px;
 	text-transform: uppercase;
 	color: #ffffff;
 	background-color: #701f15;
-	padding: 5px 0px;
-	border: 1px solid #701f15;
 	font-weight: 300;
 	font-size: 25px;
 }
 
 .footer-phone-number {
-	padding: 1% 4% 1% 0%;
+	text-align: right;
 	font-family: 'Montserrat', sans-serif, helvetica !important;
 	font-weight: 700;
 }
 
-ul.footer-location-list {
-	padding-left: 0%;
-}
-
-.footer-location-two {
-	padding-left: 42%;
-}
-
-.footer-location-three {
-	padding-left: 16.5%;
+.footer-location-list {
+	text-align: right;
 }
 
 .footer-content a {
@@ -867,7 +809,7 @@ ul.footer-location-list {
 }
 
 .footer-logo img {
-	width: 58%;
+	width: 61%;
 }
 
 .aj-footer-menu,
@@ -888,27 +830,6 @@ ul.footer-location-list {
 }
 
 @media only screen and ( max-width: 1280px ) {
-	.footer-phone-number {
-		padding: 1% 0% 1% 0%;
-	}
-
-	ul.footer-location-list {
-		margin-right: -20%;
-	}
-
-	.footer-location-two {
-		padding-left: 37%;
-	}
-
-	.footer-location-three {
-		padding-left: 14.5%;
-	}
-
-	.footer-contact .footer-contact-us {
-		margin-left: 13%;
-		width: 73%;
-	}
-
 	.copyright-wrap {
 		padding-right: 11%;
 	}
@@ -916,34 +837,17 @@ ul.footer-location-list {
 
 @media only screen and ( max-width: 1260px ) {
 	.footer-phone-number {
-		text-align: center;
 		font-size: 20px;
-	}
-
-	ul.footer-location-list {
-		padding-right: 13%;
-	}
-
-	.footer-location-two {
-		padding-left: 0%;
-	}
-
-	.footer-location-three {
-		padding-left: 0%;
-	}
-
-	.footer-contact {
-		padding-right: 5%;
-		text-align: center;
-	}
-
-	.footer-contact .footer-contact-us {
-		margin-left: 0%;
-		width: 100%;
 	}
 
 	.copyright-wrap {
 		padding-right: 0%;
+	}
+}
+
+@media only screen and ( max-width: 1175px ) {
+	h3.footer-contact-us {
+		margin-left: 20px;
 	}
 }
 
@@ -952,24 +856,20 @@ ul.footer-location-list {
 		height: 100%;
 	}
 
+	h3.footer-contact-us {
+		margin: 0 0 20px 0;
+	}
+
 	.aj-footer-menu {
 		display: none;
 	}
 
 	.copyright-wrap {
-		padding-bottom: 4%;
+		padding: 4% 0;
 	}
 
-	.aj-footer-menu {
+	.footer-location-list {
 		text-align: center;
-	}
-
-	ul.footer-location-list {
-		padding-right: 18%;
-	}
-
-	ul#menu-footer-nav {
-		padding: 0;
 	}
 
 	.footer-logo {
@@ -977,20 +877,9 @@ ul.footer-location-list {
 	}
 
 	.footer-phone-number {
-		padding: 2% 0;
-		font-size: 22px;
-	}
-
-	.footer-contact {
-		padding: 2% 5%;
-	}
-
-	.copyright {
+		font-size: 28px;
+		margin-bottom: 10px;
 		text-align: center;
-	}
-
-	.company-name h4 {
-		padding-left: 0px;
 	}
 
 	.copyright-wrap {
@@ -1096,36 +985,7 @@ ul.footer-location-list {
 	}
 }
 
-@media only screen and ( max-width : 900px ) {
-	.hamburger {
-		display: block;
-	}
-
-	.main-nav {
-		display: none;
-	}
-
-	.single_work img {
-		height: 150px;
-	}
-}
-
-@media only screen and ( max-width : 768px ) {
-	.single_work img {
-		height: 200px;
-	}
-
-	.testimonial {
-		margin-left: 0px;
-	}
-}
-
 @media only screen and ( max-width : 700px ) {
-	.testimonial_container {
-		position: relative;
-		margin: 0 0 0 0;
-	}
-
 	.slides img {
 		margin-left: 0px;
 	}
@@ -1134,11 +994,5 @@ ul.footer-location-list {
 @media only screen and ( max-width : 517px ) {
 	.x {
 		left: 0px;
-	}
-}
-
-@media only screen and ( max-width : 450px ) {
-	footer {
-		height: 400px;
 	}
 }

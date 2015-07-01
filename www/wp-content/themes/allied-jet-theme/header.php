@@ -41,4 +41,6 @@
 		</nav>
 	</div>
 
+	<div class="header-boarder"></div>
+
 	<div class="aj-page-content-wrap">
