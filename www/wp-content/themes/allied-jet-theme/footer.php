@@ -38,7 +38,7 @@
 					</div>
 
 					<div class="footer-contact grid-25 tablet-grid-100">
-						<h3 class="footer-contact-us">Contact Us</h3>
+						<a href="<?php echo esc_url( get_home_url() ) ?>/contact-us"><h3 class="footer-contact-us">Contact Us</h3>
 
 						<div class="contact-info-wrap">
 
