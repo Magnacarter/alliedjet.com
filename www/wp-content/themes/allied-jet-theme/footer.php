@@ -1,3 +1,4 @@
+			</div> <!--page content wrap from header.php-->
 			<footer>
 
 				<HR WIDTH="100%" COLOR="white" SIZE="1">
@@ -9,27 +10,52 @@
 				</style>
 
 				<div class="footer-content grid-container">
-
-					<div class="company-name grid-50">
-						<h4><a href="<?php echo esc_url( get_home_url() ) ?>"><?php echo esc_html( get_bloginfo( 'name' ) ) ?></a></h4>
+					<div class="aj-footer-menu grid-20 tablet-grid-100">
+						<?php
+							$defaults = array(
+								'theme_location'  => '',
+								'menu'            => 'footer-nav',
+								'container'       => 'div',
+								'container_class' => '',
+								'container_id'    => '',
+								'menu_class'      => 'menu',
+								'menu_id'         => '',
+								'echo'            => true,
+								'fallback_cb'     => 'wp_page_menu',
+								'before'          => '',
+								'after'           => '',
+								'link_before'     => '',
+								'link_after'      => '',
+								'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+								'depth'           => 0,
+								'walker'          => ''
+							);
+							wp_nav_menu( $defaults )
+						?>
 					</div>
 
-					<div id="social-links" class="ss-icon grid-50">
-						<a href="<?php the_field( 'facebook_link', 'options' ) ?>" target="_blank">&#xF610;</a>
-						<a href="<?php the_field( 'twitter_link', 'options' ) ?>" target="_blank">&#xF611;</a>
-						<a href="<?php the_field( 'linkedin_link', 'options' ) ?>" target="_blank">&#xF612;</a>
-						<a href="<?php the_field( 'instagram_link', 'options' ) ?>" target="_blank">&#xF641;</a>
+					<div class="footer-logo grid-60 tablet-grid-100">
+						<h4><a href="<?php echo esc_url( get_home_url() ) ?>"><img src="<?php the_field( 'nav_logo', 'options' ) ?>"/></a></h4>
+					</div>
+
+					<div class="footer-contact grid-20 tablet-grid-100">
+						<a href="<?php echo esc_url( get_home_url() )?>/contact-us"><h3 class="footer-contact-us">Contact Us</h3></a>
+						<h3 class="footer-phone-number"><?php the_field( 'phone_number', 'options' ) ?></h3>
+
+						<ul class="footer-location-list">
+							<li class="footer-location-one"><?php the_field( 'header_location_1', 'options' ) ?></li>
+
+							<li class="footer-location-two"><?php the_field( 'header_location_2', 'options' ) ?></li>
+
+							<li class="footer-location-three"><?php the_field( 'header_location_3', 'options' ) ?></li>
+						</ul>
 					</div>
 
 				</div>
 
 				<div class="copyright-wrap grid-container">
-					<div class="copyright grid-50">
+					<div class="copyright grid-100">
 						<h5>&copy;<?php echo date('Y ') ?><a href="<?php echo esc_url( get_home_url() ) ?>"><?php echo esc_html( get_bloginfo( 'name' ) ) ?></a></h5>
-					</div>
-
-					<div class="footer-description-wrap grid-50">
-						<h5><?php echo esc_html( get_bloginfo( 'description' ) )?></h5>
 					</div>
 				</div>
 

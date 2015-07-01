@@ -41,12 +41,4 @@
 		</nav>
 	</div>
 
-
-
-
-
-
-
-
-
-
+	<div class="aj-page-content-wrap">
