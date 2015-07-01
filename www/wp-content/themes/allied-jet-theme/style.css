@@ -800,6 +800,10 @@ h3.footer-contact-us {
 	text-align: right;
 }
 
+ul.footer-location-list li {
+	font-size: 13.5px;
+}
+
 .footer-content .aj-footer-menu a {
 	text-transform: uppercase;
 }
@@ -819,9 +823,11 @@ h3.footer-contact-us {
 
 .aj-footer-menu {
 	font-family: 'Montserrat', sans-serif, helvetica !important;
-	font-size: 13.5px;
+	font-size: 15px;
 	font-weight: 300;
 }
+
+.aj-footer-menu ul li
 
 .copyright-wrap {
 	font-family: 'Montserrat', sans-serif, helvetica !important;
