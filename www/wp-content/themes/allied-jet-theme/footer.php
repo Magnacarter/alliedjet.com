@@ -1,8 +1,6 @@
 			</div> <!--page content wrap from header.php-->
 			<footer>
 
-				<HR WIDTH="100%" COLOR="white" SIZE="1">
-
 				<style type="text/css">
 					footer {
 						background-color: <?php the_field( 'footer_color', 'options' ) ?>;
