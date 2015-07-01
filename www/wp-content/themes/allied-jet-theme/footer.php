@@ -48,7 +48,7 @@
 
 				<div class="footer-contact grid-25 tablet-grid-100">
 
-					<a href="<?php echo esc_url( get_home_url() ) ?>/contact-us"><h3 class="footer-contact-us">Contact Us</h3>
+					<a href="<?php echo esc_url( get_home_url() ) ?>/contact-us"><h3 class="footer-contact-us">Contact Us</h3></a>
 
 					<div class="contact-info-wrap">
 
@@ -56,11 +56,11 @@
 
 						<ul class="footer-location-list">
 
-							<li class="footer-location-one"><?php the_field( 'header_location_1', 'options' ) ?></li>
+							<li><?php the_field( 'header_location_1', 'options' ) ?></li>
 
-							<li class="footer-location-two"><?php the_field( 'header_location_2', 'options' ) ?></li>
+							<li><?php the_field( 'header_location_2', 'options' ) ?></li>
 
-							<li class="footer-location-three"><?php the_field( 'header_location_3', 'options' ) ?></li>
+							<li><?php the_field( 'header_location_3', 'options' ) ?></li>
 
 						</ul>
 
