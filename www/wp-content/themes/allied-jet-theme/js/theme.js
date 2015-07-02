@@ -2,10 +2,10 @@ jQuery( document ).ready( function($) {
 	//Flexslider
 	$(window).load(function() {
 		$('.flexslider').flexslider({
-			slideshowSpeed: 10000,
-			controlNav: true,
-			directionNav: false,
-			animationSpeed: 1000,
+			slideshowSpeed: 6000,
+			controlNav: false,
+			directionNav: true,
+			animationSpeed: 2000,
 			direction: "horizontal",
 			animation: "slide", //String: Select your animation type, "fade" or "slide"
 			prevText: "", //String: Set the text for the "previous" directionNav item

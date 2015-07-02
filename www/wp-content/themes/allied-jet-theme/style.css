@@ -267,7 +267,7 @@ nav ul ul li a:hover {
  * Front-Page
  ==================================*/
 #front-page-content {
-	padding: 80px 0;
+	padding: 0px 0;
 }
 
 #front-page-content .page-title {
@@ -277,6 +277,61 @@ nav ul ul li a:hover {
 #front-page-content .page-post-content {
 	text-align: left;
 	padding: 50px;
+}
+
+.slide {
+	position: relative;
+}
+
+.slide h1 {
+	position: absolute;
+	top: 1%;
+	left: 11%;
+	z-index: 2;
+	font-weight: bold;
+}
+
+.slide .more-info-button {
+	position: absolute;
+	z-index: 4;
+	top: 11%;
+	left: 11.2%;
+	padding: 6px 0;
+	width: 150px;
+	border: 1px solid #701f15;
+	background-color: #701f15;
+	text-align: center;
+}
+
+.more-info-button a p {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.more-info-button a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+span.info {
+	position: relative;
+	left: 8px;
+	z-index: 3;
+	margin: 0;
+	font-size: 14px;
+}
+
+span.plus {
+	top: 10px;
+	padding: 1px .5px 1px 0;
+	line-height: 10px;
+	font-size: 21px;
+	position: absolute;
+	z-index: 4;
+	left: 28px;
+	font-weight: 700;
+	color: #701f15;
+	background-color: #ffffff;
 }
 
 /*===================================
@@ -366,10 +421,6 @@ div.sharedaddy h3.sd-title:before {
 
 .testimonial_container h1 {
 	margin-top: 30px;
-}
-
-.slides p {
-	font-style: italic;
 }
 
 /*===================================
