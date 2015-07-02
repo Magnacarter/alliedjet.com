@@ -15,24 +15,22 @@ require_once STYLESHEETPATH . '/includes/barebones-hooks.php';
  *
  * @return void
  */
-function barebones_enqueue_scripts() {
+function aji_enqueue_scripts() {
 	// Theme CSS
-	wp_enqueue_style( 'barebones-grid', get_stylesheet_directory_uri() . '/css/grid.css' );
-	wp_enqueue_style( 'barebones-main', get_stylesheet_directory_uri() . '/style.css' );
-	wp_enqueue_style( 'barebones-social', get_stylesheet_directory_uri() . '/ss_icon_fonts/ss-social.css' );
-	wp_enqueue_style( 'barebones-flexslider' , get_template_directory_uri() . '/css/flexslider.css');
-	wp_enqueue_style( 'barebones-push-menu' , get_template_directory_uri() . '/css/jPushMenu.css');
+	wp_enqueue_style( 'aji-grid', get_stylesheet_directory_uri() . '/css/grid.css' );
+	wp_enqueue_style( 'aji-main', get_stylesheet_directory_uri() . '/style.css' );
+	wp_enqueue_style( 'aji-social', get_stylesheet_directory_uri() . '/ss_icon_fonts/ss-social.css' );
+	wp_enqueue_style( 'aji-flexslider' , get_template_directory_uri() . '/css/flexslider.css');
+	wp_enqueue_style( 'aji-push-menu' , get_template_directory_uri() . '/css/jPushMenu.css');
 
 	// Theme JS
-	wp_enqueue_script( 'barebones-theme-js', get_template_directory_uri() . '/js/theme.js', array( 'jquery' ), false, true );
-	wp_enqueue_script( 'barebones-froogaloop' , get_template_directory_uri() . '/js/froogaloop.min.js', array('jquery'), '' , true);
-	wp_enqueue_script( 'barebones-flexslider' , get_template_directory_uri() . '/js/jquery.flexslider-min.js', array('jquery'), '' , true);
-	wp_enqueue_script( 'barebones-mousewheel' , get_template_directory_uri() . '/js/jquery.mousewheel.js', array('jquery'), '' , true);
-	wp_enqueue_script( 'barebones-easing' , get_template_directory_uri() . '/js/jquery.easing.js', array('jquery'), '' , true);
-	wp_enqueue_script( 'barebones-fittext' , get_template_directory_uri() . '/js/jquery.fittext.js', array('jquery'), '' , true);
-	wp_enqueue_script( 'barebones-pushmenu' , get_template_directory_uri() . '/js/jPushMenu.js', array('jquery'), '' , true);
+	wp_enqueue_script( 'aji-theme-js', get_template_directory_uri() . '/js/theme.js', array( 'jquery' ), false, true );
+	wp_enqueue_script( 'aji-flexslider' , get_template_directory_uri() . '/js/jquery.flexslider-min.js', array('jquery'), '' , true);
+	wp_enqueue_script( 'aji-mousewheel' , get_template_directory_uri() . '/js/jquery.mousewheel.js', array('jquery'), '' , true);
+	wp_enqueue_script( 'aji-easing' , get_template_directory_uri() . '/js/jquery.easing.js', array('jquery'), '' , true);
+	wp_enqueue_script( 'aji-pushmenu' , get_template_directory_uri() . '/js/jPushMenu.js', array('jquery'), '' , true);
 }
-add_action( 'wp_enqueue_scripts', 'barebones_enqueue_scripts' );
+add_action( 'wp_enqueue_scripts', 'aji_enqueue_scripts' );
 
 /**
  * Add an acf options page
