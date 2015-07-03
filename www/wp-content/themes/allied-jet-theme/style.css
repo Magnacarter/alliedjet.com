@@ -445,6 +445,151 @@ span.plus {
 }
 
 /*===================================
+ *Our Aircrafts
+ ==================================*/
+#single-aircrafts {
+	padding: 40px;
+}
+
+#single-aircrafts p {
+	text-align: left;
+}
+
+#single-aircrafts img {
+	border-bottom: 8px solid #701f15;
+}
+
+.single-aircraft {
+	margin: 40px 0;
+	background-color: #ebebeb;
+}
+
+.single-aircraft-text {
+	padding: 20px 20px;
+	background-color: #ebebeb;
+}
+
+.single-aircraft h2,
+.single-aircraft p {
+	color: #701f15;
+}
+
+.single-aircraft h2 {
+	font-size: 22px;
+}
+
+.single-aircraft p {
+	font-size: 14px;
+}
+
+.aircraft-more-info-button {
+	margin-bottom: 30px;
+	float: right;
+	padding: 6px 0;
+	width: 150px;
+	border: 1px solid #701f15;
+	background-color: #701f15;
+	text-align: center;
+}
+
+.aircraft-more-info-button a p {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.aircraft-more-info-button a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+span.aircraft-info {
+	z-index: 3;
+	margin: 0;
+	font-size: 14px;
+}
+
+span.aircraft-plus {
+	top: 10px;
+	padding: 1px .5px 1px 0;
+	line-height: 10px;
+	font-size: 21px;
+	position: absolute;
+	z-index: 4;
+	left: 28px;
+	font-weight: 700;
+	color: #701f15;
+	background-color: #ffffff;
+}
+
+
+/*===================================
+ *Single Aircraft Page
+ ==================================*/
+.aircraft-details {
+	margin-top: -8px;
+	background-color: #ebebeb;
+	padding: 30px;
+}
+
+.aircraft-details h2 {
+	color: #701f15;
+}
+
+.aircraft-details h3 {
+	font-size: 18px;
+	color: #701f15;
+}
+
+.aircraft-details p {
+	text-align: left;
+	font-size: 14px;
+	color: #701f15;
+}
+
+.aircraft-text {
+	padding: 0 210px;
+}
+
+.serial-number {
+	padding-left: 20%;
+}
+
+.registration {
+	padding-right: 20%;
+}
+
+@media only screen and ( max-width: 920px ) {
+	.aircraft-text {
+		padding: 0 40px;
+	}
+
+	.serial-number {
+		padding-left: 4%;
+	}
+
+	.registration {
+		padding-right: 4%;
+	}
+}
+
+@media only screen and ( max-width: 780px ) {
+	.serial-number {
+		padding-left: 0;
+	}
+
+	.registration {
+		padding-right: 0;
+	}
+}
+
+@media only screen and ( max-width: 600px ) {
+	.aircraft-text {
+		padding: 0 10px;
+	}
+}
+
+
+/*===================================
  *Contact Section
  ==================================*/
 .contact-content .page-title {
