@@ -1,4 +1,0 @@
-<?php
-/**
- * Barebones hooks
- */

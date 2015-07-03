@@ -3,7 +3,7 @@
  * Template Name: Archives
  */
 get_header() ?>
-archives.php
+
 	<section id="archive-page-content grid-container">
 
 		<div class="archive-content grid-100">

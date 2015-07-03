@@ -5,9 +5,6 @@ require_once STYLESHEETPATH . '/includes/post-types.php';
 //Register Advanced Custom Fields
 require_once STYLESHEETPATH . '/includes/acf.php';
 
-//Register Barebones Hooks
-require_once STYLESHEETPATH . '/includes/barebones-hooks.php';
-
 /**
  * Load scripts and styles for the theme
  *

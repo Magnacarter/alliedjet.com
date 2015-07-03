@@ -3,7 +3,7 @@
  * Index
  */
 get_header() ?>
-index.php
+
 	<section id="index-page-content grid-container">
 
 		<div class="general-content grid-100">

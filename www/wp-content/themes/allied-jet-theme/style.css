@@ -121,7 +121,6 @@ li {
 	text-decoration: none;
 }
 
-
 @media only screen and ( max-width: 1275px ) {
 	.header-locations {
 		padding-right: 5%;
@@ -140,7 +139,7 @@ li {
 }
 
 /*===================================
- *Navigation
+ * Navigation
  ==================================*/
 nav {
 	margin: 0 auto;
@@ -445,7 +444,7 @@ span.plus {
 }
 
 /*===================================
- *Our Aircrafts
+ * Our Aircrafts
  ==================================*/
 #single-aircrafts {
 	padding: 40px;
@@ -521,9 +520,8 @@ span.aircraft-plus {
 	background-color: #ffffff;
 }
 
-
 /*===================================
- *Single Aircraft Page
+ * Single Aircraft Page
  ==================================*/
 .aircraft-details {
 	margin-top: -8px;
@@ -588,9 +586,8 @@ span.aircraft-plus {
 	}
 }
 
-
 /*===================================
- *Contact Section
+ * Contact Section
  ==================================*/
 .contact-content .page-title {
 	text-align: center;
@@ -840,8 +837,6 @@ ul.footer-location-list li {
 	font-weight: 300;
 }
 
-.aj-footer-menu ul li
-
 .copyright-wrap {
 	font-family: 'Montserrat', sans-serif, helvetica !important;
 	text-align: center;
@@ -921,7 +916,7 @@ ul.footer-location-list li {
 }
 
 /*===================================
- *Media Queries
+ * Media Queries
  ==================================*/
 @media only screen and ( max-width : 1025px ) {
 	.main-nav {

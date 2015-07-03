@@ -2,17 +2,17 @@
 /**
  * Front Page Slider
  */
-if( have_rows('front_page_slides') ) : ?>
+if( have_rows( 'front_page_slides' ) ) : ?>
 
 	<ul class="slides">
 
 		<?php $i = 0 ?>
 
-		<?php while( have_rows('front_page_slides') ) : the_row(); $i++;
+		<?php while( have_rows( 'front_page_slides' ) ) : the_row(); $i++;
 
 			// vars
-			$aji_image = get_sub_field('aircraft_image');
-			$aji_name = get_sub_field('aircraft_name');
+			$aji_image = get_sub_field( 'aircraft_image' );
+			$aji_name = get_sub_field( 'aircraft_name' );
 
 		?>
 
