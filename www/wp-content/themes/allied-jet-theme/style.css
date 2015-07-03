@@ -349,12 +349,6 @@ span.plus {
 	border-bottom: 9px solid #701f15;
 }
 
-@media only screen and ( max-width: 1480px ) {
-	.eis-image-one img {
-		height: 284px;
-	}
-}
-
 .eis-image-two img {
 	width: 100%;
 	height: 284px;
@@ -388,6 +382,18 @@ span.plus {
 .eis-button a {
 	color: #ffffff;
 	text-decoration: none;
+}
+
+@media only screen and ( max-width: 1480px ) {
+	.eis-image-one img {
+		height: 284px;
+	}
+}
+
+@media only screen and ( max-width: 1280px ) {
+	.eis-description {
+		height: 302px;
+	}
 }
 
 @media only screen and ( max-width: 1111px ) {
