@@ -19,11 +19,6 @@ body {
 	-webkit-text-size-adjust: 100%;
 }
 
-hr {
-	margin-top: 0;
-	margin-bottom: 0;
-}
-
 img {
 	max-width: 100%;
 }
@@ -280,7 +275,7 @@ nav ul ul li a:hover {
 }
 
 .eis-content-wrap {
-	border-top: 9px solid #701f15;
+	border-top: 5px solid #701f15;
 }
 
 .flexslider {
@@ -348,22 +343,32 @@ span.plus {
 }
 
 .eis-image-one img {
-	width: 387px;
-	height: 235px;
-	margin-bottom: -4px;
+	width: 100%;
+	border-right: 9px solid #701f15;
+	border-top: 9px solid #701f15;
+	border-bottom: 9px solid #701f15;
+}
+
+@media only screen and ( max-width: 1480px ) {
+	.eis-image-one img {
+		height: 284px;
+	}
 }
 
 .eis-image-two img {
-	height: 235px;
-	margin-bottom: -4px;
+	width: 100%;
+	height: 284px;
+	border-left: 9px solid #701f15;
+	border-top: 9px solid #701f15;
+	border-bottom: 9px solid #701f15;
 }
 
 .eis-description {
-	padding-left: 30px;
-	border-left: 9px solid #701f15;
-	border-right: 9px solid #701f15;
 	position: relative;
-	z-index: 1;
+	height: 302px;
+	text-align: center;
+	border-top: 9px solid #701f15;
+	border-bottom: 9px solid #701f15;
 }
 
 .eis-button {
@@ -371,7 +376,7 @@ span.plus {
 	padding: 3px 35px;
 	z-index: 2;
 	border: 1px solid #701f15;
-	top: 70%;
+	top: 57%;
 	margin-right: auto;
 	margin-left: auto;
 	right: 0;
@@ -383,6 +388,58 @@ span.plus {
 .eis-button a {
 	color: #ffffff;
 	text-decoration: none;
+}
+
+@media only screen and ( max-width: 1111px ) {
+	.eis-description {
+		padding-left: 20px;
+	}
+}
+
+@media only screen and ( max-width: 765px ) {
+	.flexslider .slides img {
+		height: auto !important;
+	}
+
+	.eis-image-one img,
+	.eis-image-two img {
+		height: auto;
+	}
+
+	.eis-image-two img {
+		border-left: none;
+	}
+
+	.eis-description {
+		position: relative;
+		height: auto;
+		text-align: center;
+		border-top: none;
+		border-bottom: none;
+	}
+
+	.eis-button {
+		top: 78%;
+	}
+
+	.aj-page-content-wrap {
+		border-bottom: none;
+		border-top: none;
+	}
+
+	.slide .more-info-button {
+		top: 23%;
+	}
+}
+
+@media only screen and ( max-width: 531px ) {
+	.slide h1 {
+		font-size: 29px;
+	}
+
+	.eis-content-wrap {
+		border-top: none;
+	}
 }
 
 /*===================================
@@ -533,8 +590,9 @@ input#s {
  * Footer
  ==================================*/
 footer {
-	border-top: 8px solid #701f15;
+	border-top: 9px solid #701f15;
 	height: 300px;
+	margin-top: 301px;
 }
 
 footer .footer-content {
@@ -673,6 +731,7 @@ ul.footer-location-list li {
 @media only screen and ( max-width: 768px ) {
 	footer {
 		height: 100%;
+		margin: 0;
 	}
 
 	h3.footer-contact-us {

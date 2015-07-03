@@ -11,7 +11,7 @@ get_header() ?>
 	</div>
 
 	<div class="eis-content-wrap">
-		<div class="experience-integrity-section grid-container">
+		<div class="experience-integrity-section">
 			<?php get_template_part( 'eis' ) ?>
 		</div>
 	</div>
