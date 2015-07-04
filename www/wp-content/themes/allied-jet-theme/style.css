@@ -527,6 +527,7 @@ span.aircraft-plus {
 	margin-top: -8px;
 	background-color: #ebebeb;
 	padding: 30px;
+	border-bottom: 8px solid #701f15;
 }
 
 .aircraft-details h2 {
@@ -556,6 +557,67 @@ span.aircraft-plus {
 	padding-right: 20%;
 }
 
+.notes,
+.maintenance_status,
+.exterior,
+.interiors,
+.options,
+.avionics,
+.engines,
+.props,
+.airframe {
+	padding: 20px 100px;
+}
+
+#specs {
+	margin-top: 5px;
+	border-top: 8px solid #701f15;
+}
+
+.spec-content {
+	margin-top: 35px;
+}
+
+#specs h4 {
+	text-align: left;
+	color: #701f15;
+	font-size: 19px;
+	font-weight: 700;
+}
+
+#specs p {
+	text-align: left;
+	color: #701f15;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.disclaimer {
+	padding: 50px 205px;
+}
+
+.disclaimer p {
+	text-align: left;
+	color: #8e8e8e;
+	font-size: 13.5px;
+}
+
+.to-top {
+	text-align: right;
+	padding-right: 100px;
+}
+
+@media only screen and ( max-width: 1025px ) {
+	.to-top {
+		text-align: center;
+		padding-right: 0;
+	}
+
+	.disclaimer {
+		padding: 50px 50px;
+	}
+}
+
 @media only screen and ( max-width: 920px ) {
 	.aircraft-text {
 		padding: 0 40px;
@@ -583,6 +645,18 @@ span.aircraft-plus {
 @media only screen and ( max-width: 600px ) {
 	.aircraft-text {
 		padding: 0 10px;
+	}
+
+	.notes,
+	.maintenance_status,
+	.exterior,
+	.interiors,
+	.options,
+	.avionics,
+	.engines,
+	.props,
+	.airframe {
+		padding: 10px 10px;
 	}
 }
 
@@ -736,7 +810,6 @@ input#s {
 footer {
 	border-top: 9px solid #701f15;
 	height: 300px;
-	margin-top: 301px;
 }
 
 footer .footer-content {

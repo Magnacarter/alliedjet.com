@@ -16,6 +16,22 @@ get_header() ?>
 		</div>
 	</div>
 
+	<?php
+
+	if ( is_front_page() ) {
+		?>
+
+		<style type="text/css">
+			footer {
+				margin-top: 301px;
+			}
+		</style>
+
+		<?php
+	}
+
+	?>
+
 </section>
 
 <?php get_footer() ?>

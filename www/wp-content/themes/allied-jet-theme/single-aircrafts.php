@@ -69,9 +69,19 @@ get_header() ?>
 
 			</div>
 
+			<?php get_template_part( 'specs' ) ?>
+
 		<?php endwhile; endif;
 
 	wp_reset_postdata() ?>
+
+	<div class="to-top grid-100">
+		<a href="#"><img src="<?php the_field( 'top', 'options' ) ?>"></a>
+	</div>
+
+	<div class="disclaimer grid-container">
+		<p><?php the_field( 'disclaimer', 'options' ) ?></p>
+	</div>
 
 	</section>
 
