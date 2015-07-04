@@ -482,42 +482,13 @@ span.plus {
 }
 
 .aircraft-more-info-button {
-	margin-bottom: 30px;
-	float: right;
-	padding: 6px 0;
-	width: 150px;
-	border: 1px solid #701f15;
-	background-color: #701f15;
-	text-align: center;
+	text-align: right;
+	margin-left: 20px;
+	margin-top: -30px;
 }
 
-.aircraft-more-info-button a p {
-	color: #ffffff;
-	text-decoration: none;
-}
-
-.aircraft-more-info-button a {
-	color: #ffffff;
-	text-decoration: none;
-}
-
-span.aircraft-info {
-	z-index: 3;
-	margin: 0;
-	font-size: 14px;
-}
-
-span.aircraft-plus {
-	top: 10px;
-	padding: 1px .5px 1px 0;
-	line-height: 10px;
-	font-size: 21px;
-	position: absolute;
-	z-index: 4;
-	left: 28px;
-	font-weight: 700;
-	color: #701f15;
-	background-color: #ffffff;
+.aircraft-more-info-button img {
+	border: none !important;
 }
 
 /*===================================
@@ -615,6 +586,11 @@ span.aircraft-plus {
 
 	.disclaimer {
 		padding: 50px 50px;
+	}
+
+	.aircraft-more-info-button {
+		text-align: center;
+		margin-top: 10px;
 	}
 }
 

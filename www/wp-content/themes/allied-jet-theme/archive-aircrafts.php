@@ -38,10 +38,8 @@ get_header() ?>
 
 					<p>Engine Hours: <?php the_field( 'engine_hours' ) ?></p>
 
-					<div class="aircraft-more-info-button grid-50">
-						<a href="<?php the_permalink() ?>" claas="aircraft-more-info-a">
-							<span class="aircraft-info">+ More Info</span>
-						</a>
+					<div class="aircraft-more-info-button grid-100">
+						<a href="<?php the_permalink() ?>"><img src="<?php the_field( 'more_info_button', 'options' ) ?>"></a>
 					</div>
 
 				</div>
