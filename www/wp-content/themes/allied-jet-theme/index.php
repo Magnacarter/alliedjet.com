@@ -50,4 +50,23 @@ get_header() ?>
 
 	<?php endif ?>
 
+	<!-- Contact Page -->
+	<?php if ( is_page( 'contact-us' ) ) : ?>
+
+		<style type="text/css">
+
+			.general-content {
+				display: none;
+			}
+
+			footer {
+				margin-top: 0px;
+			}
+
+		</style>
+
+		<?php get_template_part( 'contact' ) ?>
+
+	<?php endif ?>
+
 <?php get_footer() ?>

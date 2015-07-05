@@ -360,6 +360,97 @@ nav ul ul li a:hover {
 	font-size: 12px;
 }
 
+/*--------Contact Us page-------*/
+.contact-form h3,
+.contact-info h3,
+.contact-info h4,
+.contact-info p {
+	margin: 0;
+	text-align: left;
+	color: #701f15;
+}
+
+.contact-content-wrap {
+	background-color: #ebebeb;
+}
+
+.contact-staff-wrap {
+	margin-bottom: 400px;
+	padding-top: 5px;
+	border-top: 8px solid #701f15;
+	border-bottom: 8px solid #701f15;
+}
+
+.contact-info,
+.contact-form {
+	padding: 50px 35px 0 35px;
+}
+
+.contact-form {
+	border-left: 8px solid #701f15;
+}
+
+.contact-info p {
+	margin-bottom: 10px;
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.contact-staff {
+	padding: 50px 50px;
+}
+
+.contact-staff h3,
+.contact-staff p {
+	text-align: left;
+	color: #701f15;
+	font-weight: 700;
+}
+
+.contact-staff h3 {
+	padding-bottom: 10px;
+}
+
+.contact-staff p {
+	text-align: left;
+	color: #701f15;
+	font-size: 13px
+}
+
+.contact-staff p {
+	margin: 0;
+}
+
+.contact-staff a {
+	margin: 0;
+	text-decoration: none;
+	text-align: left;
+	color: #701f15;
+	font-size: 13px
+}
+
+.contact-staff p {
+	color: #701f15;
+	-webkit-transition: color 0.5s ease;
+	-moz-transition: color 0.5s ease;
+	-o-transition: color 0.5s ease;
+	transition: color 0.5s ease;
+}
+
+.contact-staff p:hover {
+	color: #5b5b5b;
+	-webkit-transition: color 0.5s ease;
+	-moz-transition: color 0.5s ease;
+	-o-transition: color 0.5s ease;
+	transition: color 0.5s ease;
+}
+
+@media only screen and ( max-width: 1280px ) {
+	.contact-staff-wrap {
+		margin-bottom: 360px;
+	}
+}
+
 @media only screen and ( max-width: 1080px ) {
 	.email {
 		margin-right: 50px;
@@ -383,6 +474,14 @@ nav ul ul li a:hover {
 
 	.service-description p {
 		padding-right: 15%;
+	}
+
+	.contact-form {
+		border-left: none;
+	}
+
+	.contact-staff-wrap {
+		margin-bottom: 0px;
 	}
 }
 
@@ -776,20 +875,29 @@ span.plus {
 	padding: 10% 0;
 }
 
+.gfield_label {
+	display: none !important;
+}
+
+#input_2_1_3_container label {
+	display: none !important;
+}
+
 /** Submit Button **/
 .gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input {
 	float: right;
-	width: 171px;
-	height: 32px;
-	padding: -6% 50% 0 0;
+	width: 80px;
+	height: 25px;
+	font-weight: 700;
 	margin-top: -6.2%;
 	margin-right: 3%;
 	font-size: 20px;
-	background-color: transparent;
-	border: solid 1px #2e2e2e !important;
+	background-color: #701f15;
+	border: solid 1px #701f15 !important;
 	font-weight: 400;
-	color: #2A2A2A;
+	color: #ffffff;
 	cursor: pointer;
+	border-radius: 3px;
 }
 
 .gform_wrapper .gform_footer input.button:hover {
@@ -805,25 +913,37 @@ span.plus {
 	padding-left: 3% !important;
 }
 
-.ginput_container input {
-	border-color: #2e2e2e !important;
-	border-width: 1px !important;
+.ginput_container input,
+.ginput_container textarea,
+.ginput_container select {
+	background-color: #fff;
+	color: #8e8e8e;
+	border-width: 0px !important;
+	border-radius: 3px;
+	font-weight: 700;
+	font-size: 12px;
+}
+
+.gform_wrapper textarea.medium {
+	height: 4.375em !important;
 }
 
 @media only screen and ( max-width: 1280px ) {
 	/** Submit Button **/
 	.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input {
 		float: right;
-		width: 171px;
-		height: 33px;
-		padding: -6% 50% 0 0;
-		margin-top: -7%;
+		width: 80px;
+		height: 25px;
+		font-weight: 700;
+		margin-top: -6.2%;
 		margin-right: 3%;
 		font-size: 20px;
-		background-color: transparent;
-		border: solid 1px #2e2e2e !important;
+		background-color: #701f15;
+		border: solid 1px #701f15 !important;
 		font-weight: 400;
-		color: #2A2A2A;
+		color: #ffffff;
+		cursor: pointer;
+		border-radius: 3px;
 	}
 }
 
