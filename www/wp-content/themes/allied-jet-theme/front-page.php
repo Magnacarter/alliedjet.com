@@ -25,6 +25,12 @@ get_header() ?>
 			footer {
 				margin-top: 301px;
 			}
+
+			@media only screen and ( max-width: 766px ) {
+				footer {
+					margin-top: 0px;
+				}
+			}
 		</style>
 
 		<?php
