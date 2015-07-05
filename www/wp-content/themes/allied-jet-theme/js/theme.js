@@ -38,7 +38,7 @@ jQuery( document ).ready( function($) {
 	var toTop = $( '.to-top a' );
 	toTop.click( function( e ) {
 		e.preventDefault();
-		$("html, body").animate({ scrollTop: 0 }, 500 );
+		$( 'html, body' ).animate({ scrollTop: 0 }, 500 );
 		return false;
 	});
 

@@ -1,4 +1,4 @@
-<?
+<?php
 /**
  * Specs section for single aircraft pages
  */

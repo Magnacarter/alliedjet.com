@@ -20,4 +20,18 @@ get_header() ?>
 
 	</section>
 
+	<?php if ( is_page() == '/our-company' ) : ?>
+
+		<style type="text/css">
+
+			.general-content {
+				display: none;
+			}
+
+		</style>
+
+		<?php get_template_part( 'company' ) ?>
+
+	<?php endif ?>
+
 <?php get_footer() ?>
