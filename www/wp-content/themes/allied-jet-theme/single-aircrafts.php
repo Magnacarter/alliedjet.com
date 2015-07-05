@@ -6,8 +6,13 @@ get_header() ?>
 
 	<?php
 
+	global $post;
+
+	$post_slug = $post->post_name;
+
 	$args = array(
 		'post_type' => 'aircrafts',
+		'name' => $post_slug,
 	);
 
 	$aircrafts = new WP_Query( $args ) ?>
