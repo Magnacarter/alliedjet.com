@@ -4,23 +4,19 @@
  */
 get_header() ?>
 
-<?php if ( is_single() ) : ?>
-
 	<?php
 
 	$args = array(
 		'post_type' => 'aircrafts',
-		);
+	);
 
 	$aircrafts = new WP_Query( $args ) ?>
 
 	<section id="aircraft">
 
-	<?php if ( $aircrafts->have_posts() ) : ?>
-
 		<?php while ( $aircrafts->have_posts() ) : $aircrafts->the_post() ?>
 
-			<?php if( have_rows( 'aircraft_slider_images' ) ) : ?>
+			<?php if ( have_rows( 'aircraft_slider_images' ) ) : ?>
 
 			<div class="flexslider">
 
@@ -71,7 +67,7 @@ get_header() ?>
 
 			<?php get_template_part( 'specs' ) ?>
 
-		<?php endwhile; endif;
+		<?php endwhile;
 
 	wp_reset_postdata() ?>
 
@@ -84,7 +80,5 @@ get_header() ?>
 	</div>
 
 	</section>
-
-<?php endif ?>
 
 <?php get_footer() ?>

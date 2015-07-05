@@ -10,7 +10,7 @@
 
 	<div class="eis-button">
 
-		<a href="" claas="eis-a">
+		<a href="<?php echo esc_url( get_home_url() ) ?>/contact-us" claas="eis-a">
 
 			<span class="eis-text">Get started with our team...</span>
 

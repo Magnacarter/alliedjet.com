@@ -13,6 +13,7 @@ if( have_rows( 'front_page_slides' ) ) : ?>
 			// vars
 			$aji_image = get_sub_field( 'aircraft_image' );
 			$aji_name = get_sub_field( 'aircraft_name' );
+			$aji_name_with_dashes = str_replace( ' ', '-', $aji_name );
 
 		?>
 
@@ -25,7 +26,7 @@ if( have_rows( 'front_page_slides' ) ) : ?>
 				<?php if ( $i >= 2 ) : ?>
 
 					<div class="more-info-button">
-						<a href="#" claas="more-info-a">
+						<a href="<?php echo esc_url( get_home_url() ) ?>/aircrafts/<?php echo $aji_name_with_dashes ?>" claas="more-info-a">
 							<span class="plus">+</span><span class="info">More Info</span>
 						</a>
 					</div>

@@ -703,7 +703,8 @@ span.plus {
 }
 
 .single-aircraft {
-	margin: 40px 0;
+	text-align: center;
+	margin: 40px 2.5%;
 	background-color: #ebebeb;
 }
 

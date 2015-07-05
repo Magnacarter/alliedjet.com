@@ -19,7 +19,7 @@ get_header() ?>
 
 		<?php while ( $aircrafts->have_posts() ) : $aircrafts->the_post() ?>
 
-			<div class="single-aircraft grid-50 tablet-grid-50 mobile-grid-100">
+			<div class="single-aircraft grid-45 tablet-grid-45 mobile-grid-100">
 				<img src="<?php the_field( 'aircraft_image' ) ?>"/>
 
 				<HR WIDTH="100%" COLOR="#701f15" SIZE="8">
