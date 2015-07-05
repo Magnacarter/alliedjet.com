@@ -20,7 +20,7 @@ get_header() ?>
 
 	</section>
 
-	<?php if ( is_page() == '/our-company' ) : ?>
+	<?php if ( is_page( 'our-company' ) ) : ?>
 
 		<style type="text/css">
 
