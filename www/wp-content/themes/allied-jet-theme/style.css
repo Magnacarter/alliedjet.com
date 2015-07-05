@@ -600,12 +600,16 @@ span.plus {
 	border-bottom: 9px solid #701f15;
 }
 
+.eis-description img {
+	margin-top: 4%;
+}
+
 .eis-button {
 	position: absolute;
 	padding: 3px 35px;
 	z-index: 2;
 	border: 1px solid #701f15;
-	top: 57%;
+	top: 67%;
 	margin-right: auto;
 	margin-left: auto;
 	right: 0;
