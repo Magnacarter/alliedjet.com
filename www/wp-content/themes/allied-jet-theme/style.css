@@ -381,6 +381,14 @@ nav ul ul li a:hover {
 	border-bottom: 8px solid #701f15;
 }
 
+.sales-phone p {
+	margin: 0 !important;
+}
+
+.sales-email {
+	margin-bottom: 9px;
+}
+
 .contact-info,
 .contact-form {
 	padding: 50px 35px 0 35px;

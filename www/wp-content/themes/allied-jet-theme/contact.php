@@ -13,6 +13,7 @@
 				<div class="sales-phone grid-50">
 					<h4>Phone:</h4>
 					<p><?php the_field( 'sales_phone', 'options' ) ?></p>
+					<p><?php the_field( 'sales_phone_two', 'options' ) ?></p>
 				</div>
 
 				<div class="sales-email grid-50">
@@ -62,7 +63,6 @@
 					<img src="<?php the_field( 'employee_image' ) ?>">
 					<h3><?php the_title() ?></h3>
 					<p><?php the_field( 'phone_number' ) ?></p>
-					<p><?php the_field( 'sales_phone_two' ) ?></p>
 					<a href="mailto:<?php the_field( 'email' ) ?>"><p><?php the_field( 'email' ) ?></p></a>
 				</div>
 
