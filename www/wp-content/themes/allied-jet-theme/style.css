@@ -311,6 +311,55 @@ nav ul ul li a:hover {
 	margin-right: 200px;
 }
 
+/*----Service page----*/
+
+.service-header {
+	padding: 40px 0;
+	background-color: #ebebeb;
+	text-align: center;
+}
+
+.service-header img {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.service-content-wrap {
+	margin-top: 50px;
+}
+
+.service-content {
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0px 0 50px 0px;
+}
+
+.service-icon {
+	text-align: right;
+}
+
+.service-icon img {
+	width: 100px;
+}
+
+.service-description {
+	padding-left: 100px;
+	margin-bottom: 50px;
+}
+
+.service-description h3 {
+	text-align: left;
+	color: #701f15;
+	font-weight: 700;
+}
+
+.service-description p {
+	text-align: left;
+	padding-right: 40%;
+	color: #707171;
+	font-size: 12px;
+}
+
 @media only screen and ( max-width: 1080px ) {
 	.email {
 		margin-right: 50px;
@@ -322,6 +371,18 @@ nav ul ul li a:hover {
 	.email p,
 	.phone-number p {
 		margin-top: 10px;
+	}
+
+	.service-icon {
+		text-align: center;
+	}
+
+	.service-description {
+		padding-left: 10%;
+	}
+
+	.service-description p {
+		padding-right: 15%;
 	}
 }
 

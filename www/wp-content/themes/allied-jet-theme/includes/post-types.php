@@ -76,3 +76,42 @@ function aji_employees() {
 register_post_type( 'employees', $args );
 }
 add_action( 'init', 'aji_employees' );
+
+/**
+ * Custom Post Type: Services
+ */
+function aji_services() {
+	$labels = array(
+		'name'               => 'Services',
+		'singular_name'      => 'service',
+		'add_new'            => 'Add New',
+		'add_new_item'       => 'Add New services',
+		'edit_item'          => 'Edit services',
+		'new_item'           => 'New services',
+		'all_items'          => 'All services',
+		'view_item'          => 'View services',
+		'search_items'       => 'Search services',
+		'not_found'          => 'No event found',
+		'not_found_in_trash' => 'No event found in Trash',
+		'parent_item_colon'  => '',
+		'menu_name'          => 'Services',
+	);
+
+	$args = array(
+		'labels'             => $labels,
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'services' ),
+		'capability_type'    => 'post',
+		'taxonomies'         => array( 'category' ),
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'supports'           => array( 'title', 'editor', 'thumbnail', )
+	);
+
+register_post_type( 'services', $args );
+}
+add_action( 'init', 'aji_services' );

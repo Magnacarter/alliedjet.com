@@ -20,6 +20,7 @@ get_header() ?>
 
 	</section>
 
+	<!-- Our Company Page -->
 	<?php if ( is_page( 'our-company' ) ) : ?>
 
 		<style type="text/css">
@@ -31,6 +32,21 @@ get_header() ?>
 		</style>
 
 		<?php get_template_part( 'company' ) ?>
+
+	<?php endif ?>
+
+	<!-- Services Page -->
+	<?php if ( is_page( 'services' ) ) : ?>
+
+		<style type="text/css">
+
+			.general-content {
+				display: none;
+			}
+
+		</style>
+
+		<?php get_template_part( 'services' ) ?>
 
 	<?php endif ?>
 
