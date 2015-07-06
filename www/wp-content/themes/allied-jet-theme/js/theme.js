@@ -42,4 +42,24 @@ jQuery( document ).ready( function($) {
 		return false;
 	});
 
+	//triangle caret animate
+	$(document).ready(function() {
+    $('nav li').mouseover(function() {
+        var pos = $(this)[0].offsetLeft;
+        pos = pos + Math.floor((($(this).css('width').replace('px', '') * 1) / 2.5));
+        pos = pos - Math.floor(($('#arrow').css('width').replace('px', '') * 1) / 2)
+
+        // Reset all colors
+        $('nav li a').css('color', '#444');
+
+        // Animte the arrow
+        $('#arrow').animate({
+            'margin-left': pos + 'px'
+        }, 225);
+
+        // Change the color
+        $('a', this).css('color', '#701f15');
+    });
+});
+
 });//Document ready end.

@@ -26,7 +26,7 @@ if( have_rows( 'front_page_slides' ) ) : ?>
 				<?php if ( $i >= 2 ) : ?>
 
 					<div class="more-info-button">
-						<a href="<?php echo esc_url( get_home_url() ) ?>/aircrafts/<?php echo $aji_name_with_dashes ?>" claas="more-info-a">
+						<a href="<?php echo home_url( "/aircraft/{$aji_name_with_dashes}" ) ?>" claas="more-info-a">
 							<span class="plus">+</span><span class="info">More Info</span>
 						</a>
 					</div>

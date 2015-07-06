@@ -24,6 +24,8 @@
 
 				<?php wp_nav_menu( array( 'menu' => 'main-nav' ) ) ?>
 
+				<div id="arrow"></div>
+
 			</nav>
 
 			<div class="header-locations grid-25 tablet-grid-33 mobile-grid-33">

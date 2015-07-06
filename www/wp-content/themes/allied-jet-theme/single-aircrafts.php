@@ -4,22 +4,9 @@
  */
 get_header() ?>
 
-	<?php
-
-	global $post;
-
-	$post_slug = $post->post_name;
-
-	$args = array(
-		'post_type' => 'aircrafts',
-		'name' => $post_slug,
-	);
-
-	$aircrafts = new WP_Query( $args ) ?>
-
 	<section id="aircraft">
 
-		<?php while ( $aircrafts->have_posts() ) : $aircrafts->the_post() ?>
+		<?php while ( have_posts() ) : the_post() ?>
 
 			<?php if ( have_rows( 'aircraft_slider_images' ) ) : ?>
 
