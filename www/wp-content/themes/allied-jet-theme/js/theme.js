@@ -46,6 +46,8 @@ jQuery( document ).ready( function($) {
 	$(document).ready(function() {
     $('nav li').mouseover(function() {
         var pos = $(this)[0].offsetLeft;
+        var arrow = $( '#arrow' );
+        arrow.show();
         pos = pos + Math.floor((($(this).css('width').replace('px', '') * 1) / 2.5));
         pos = pos - Math.floor(($('#arrow').css('width').replace('px', '') * 1) / 2)
 
@@ -53,7 +55,7 @@ jQuery( document ).ready( function($) {
         $('nav li a').css('color', '#444');
 
         // Animte the arrow
-        $('#arrow').animate({
+        arrow.animate({
             'margin-left': pos + 'px'
         }, 225);
 
