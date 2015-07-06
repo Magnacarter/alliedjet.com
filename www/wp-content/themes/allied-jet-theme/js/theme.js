@@ -48,11 +48,11 @@ jQuery( document ).ready( function($) {
         var pos = $(this)[0].offsetLeft;
         var arrow = $( '#arrow' );
         arrow.show();
-        pos = pos + Math.floor((($(this).css('width').replace('px', '') * 1) / 2.5));
-        pos = pos - Math.floor(($('#arrow').css('width').replace('px', '') * 1) / 2)
+        pos = pos + Math.floor( ( ( $( this ).css( 'width' ).replace( 'px', '' ) * 1) / 2.5 ) );
+        pos = pos - Math.floor( ($( '#arrow' ).css( 'width' ).replace( 'px', '' ) * 1) / 2 )
 
         // Reset all colors
-        $('nav li a').css('color', '#444');
+        $( 'nav li a' ).css( 'color', '#5b5b5b' );
 
         // Animte the arrow
         arrow.animate({
@@ -60,7 +60,7 @@ jQuery( document ).ready( function($) {
         }, 225);
 
         // Change the color
-        $('a', this).css('color', '#701f15');
+        $( 'a', this ).css( 'color', '#701f15' );
     });
 });
 
