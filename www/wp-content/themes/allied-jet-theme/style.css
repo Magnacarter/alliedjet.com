@@ -275,12 +275,13 @@ nav li:last-child {
 	margin: 20px 0 20px 0;
 }
 
-.employee-content {
-	margin: 10px 0 25px 0;
+.employee-image {
+	padding: 0 20px;
 }
 
-.employee-image img {
-	width: 290px;
+.employee-content {
+	padding: 0 20px;
+	margin: 10px 0 25px 0;
 }
 
 .employee-content h3 {
@@ -473,17 +474,6 @@ nav li:last-child {
 @media only screen and ( max-width: 1280px ) {
 	.contact-staff-wrap {
 		margin-bottom: 370px;
-	}
-}
-
-@media only screen and ( max-width: 1095px ) {
-	.employee-content {
-		padding: 0 20px;
-		margin: 10px 0 25px 0;
-	}
-
-	.employee-image img {
-		width: 100%;
 	}
 }
 

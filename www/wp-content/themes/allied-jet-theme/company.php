@@ -2,7 +2,7 @@
 	<img src="<?php the_field( 'staff_image', 'options' ) ?>">
 </div>
 
-<section id="our-company" class="grid-container">
+<section id="our-company">
 
 	<?php
 
@@ -16,7 +16,7 @@
 
 		<?php while ( $employees->have_posts() ) : $employees->the_post() ?>
 
-		<div class="single-employee">
+		<div class="single-employee grid-container">
 
 			<div class="employee-image grid-30 tablet-grid-100">
 				<img src="<?php the_field( 'employee_image' ) ?>">
