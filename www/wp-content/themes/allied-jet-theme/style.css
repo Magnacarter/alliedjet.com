@@ -717,13 +717,17 @@ span.plus {
 }
 
 #single-aircrafts img {
-	border-bottom: 8px solid #701f15;
+	border-bottom: 6px solid #701f15;
 }
 
 .single-aircraft {
 	text-align: center;
 	margin: 40px 2.5%;
 	background-color: #ebebeb;
+}
+
+.single-aircraft hr {
+	margin-top: 0;
 }
 
 .aj-single-aircraft-image {
