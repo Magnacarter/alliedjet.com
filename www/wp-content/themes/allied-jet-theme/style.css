@@ -737,8 +737,7 @@ span.plus {
 }
 
 .single-aircraft-description {
-	min-height: 110px;
-	max-height: 110px;
+	min-height: 120px;
 }
 
 .single-aircraft h2,
