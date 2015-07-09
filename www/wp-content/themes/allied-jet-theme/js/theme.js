@@ -43,7 +43,6 @@ jQuery( document ).ready( function($) {
 	});
 
 	//triangle caret animate
-	$(document).ready(function() {
     $('nav li').mouseover(function() {
         var pos = $(this)[0].offsetLeft;
         var arrow = $( '#arrow' );
@@ -61,7 +60,6 @@ jQuery( document ).ready( function($) {
 
         // Change the color
         $( 'a', this ).css( 'color', '#701f15' );
-    });
-});
+	});
 
 });//Document ready end.

@@ -1,8 +1,8 @@
-<section id="our-company" class="grid-container">
+<div class="staff-image grid-100">
+	<img src="<?php the_field( 'staff_image', 'options' ) ?>">
+</div>
 
-	<div class="staff-image grid-100">
-		<img src="<?php the_field( 'staff_image', 'options' ) ?>">
-	</div>
+<section id="our-company" class="grid-container">
 
 	<?php
 
@@ -38,7 +38,10 @@
 					<a href="mailto:<?php the_field( 'email' ) ?>"><p><?php the_field( 'email' ) ?></p></a>
 				</div>
 
-				<p><?php the_field( 'employee_description' ) ?></p>
+				<div class="grid-100">
+					<p><?php the_field( 'employee_description' ) ?></p>
+				</div>
+
 			</div>
 
 		</div>

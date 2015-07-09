@@ -23,7 +23,7 @@ get_header() ?>
 
 		<style type="text/css">
 			footer {
-				margin-top: 301px;
+				margin-top: 284px;
 			}
 
 			@media only screen and ( max-width: 766px ) {
