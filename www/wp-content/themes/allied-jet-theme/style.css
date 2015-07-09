@@ -736,6 +736,11 @@ span.plus {
 	background-color: #ebebeb;
 }
 
+.single-aircraft-description {
+	min-height: 110px;
+	max-height: 110px;
+}
+
 .single-aircraft h2,
 .single-aircraft p {
 	color: #701f15;

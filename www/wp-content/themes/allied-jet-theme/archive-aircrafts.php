@@ -30,7 +30,9 @@ get_header() ?>
 
 					<HR WIDTH="80%" COLOR="#701f15" SIZE="2">
 
-					<p><?php the_field( 'aircraft_description' ) ?></p>
+					<div class="single-aircraft-description">
+						<p><?php the_field( 'aircraft_description' ) ?></p>
+					</div>
 
 					<p>Registration: <?php the_field( 'registration' ) ?></p>
 
