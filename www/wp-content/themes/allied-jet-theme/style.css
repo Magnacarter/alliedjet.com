@@ -726,6 +726,11 @@ span.plus {
 	background-color: #ebebeb;
 }
 
+.aj-single-aircraft-image {
+	 height: 324px;
+	 width: 505px;
+}
+
 .single-aircraft-text {
 	padding: 20px 20px;
 	background-color: #ebebeb;
@@ -839,6 +844,14 @@ span.plus {
 .to-top {
 	text-align: right;
 	padding-right: 100px;
+}
+
+
+@media only screen and ( max-width: 1095px ) {
+	.aj-single-aircraft-image {
+		 height: 100%;
+		 width: 100%;
+	}
 }
 
 @media only screen and ( max-width: 1025px ) {
