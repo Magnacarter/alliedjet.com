@@ -2,7 +2,7 @@
 	<img src="<?php the_field( 'staff_image', 'options' ) ?>">
 </div>
 
-<section id="our-company">
+<section id="our-company" class="grid-container">
 
 	<?php
 
