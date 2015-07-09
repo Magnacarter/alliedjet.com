@@ -900,6 +900,10 @@ span.plus {
 	.registration {
 		padding-right: 0;
 	}
+
+	.single-aircraft {
+		margin: 40px 0%;
+	}
 }
 
 @media only screen and ( max-width: 600px ) {
