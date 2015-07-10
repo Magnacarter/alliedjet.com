@@ -73,7 +73,7 @@
 
 				<div class="copyright grid-100">
 
-					<h5>&copy;<?php echo date('Y ') ?><a href="<?php echo esc_url( get_home_url() ) ?>"><?php echo esc_html( get_bloginfo( 'name' ) ) ?></a></h5>
+					<h5>&copy;<?php echo date('Y ') ?><a href="<?php echo esc_url( get_home_url() ) ?>"><?php echo esc_html( get_bloginfo( 'name' ) ) ?>, Inc</a></h5>
 
 				</div>
 

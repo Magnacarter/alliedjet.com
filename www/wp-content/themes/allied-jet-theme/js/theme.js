@@ -47,7 +47,7 @@ jQuery( document ).ready( function($) {
         var pos = $(this)[0].offsetLeft;
         var arrow = $( '#arrow' );
         arrow.show();
-        pos = pos + Math.floor( ( ( $( this ).css( 'width' ).replace( 'px', '' ) * 1) / 2.5 ) );
+        pos = pos + Math.floor( ( ( $( this ).css( 'width' ).replace( 'px', '' ) * 1) / 2.2 ) );
         pos = pos - Math.floor( ($( '#arrow' ).css( 'width' ).replace( 'px', '' ) * 1) / 2 )
 
         // Reset all colors
@@ -61,5 +61,21 @@ jQuery( document ).ready( function($) {
         // Change the color
         $( 'a', this ).css( 'color', '#701f15' );
 	});
+
+	$('nav ul li').mouseover(function() {
+		$( 'nav li.current-menu-item a' ).css( 'background-image', 'none' )
+	});
+
+	var toTop = $( '.to-top a' );
+	var toTopP = $( '.to-top p' );
+
+	toTop.hover(
+		function() {
+			toTopP.show(400);
+		},
+		function() {
+			toTopP.hide(500);
+		}
+	);
 
 });//Document ready end.

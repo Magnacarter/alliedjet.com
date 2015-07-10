@@ -12,7 +12,7 @@
 
 body {
 	margin: 0;
-	font-family: 'Droid Sans', sans-serif, helvetica;
+	font-family: 'Montserrat', sans-serif, helvetica;
 
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -70,6 +70,7 @@ li {
 
 .header-boarder {
 	border-top: 8px solid #701f15;
+	margin-top: -10px;
 }
 
 .aj-page-content-wrap {
@@ -156,7 +157,7 @@ nav ul {
 }
 
 nav ul li {
-	padding-right: 20px;
+	padding-right: 14px;
 	display: inline-block;
 }
 
@@ -247,7 +248,10 @@ nav ul ul li a:hover {
 }
 
 nav li.current-menu-item a {
-	color: #701f15	;
+	color: #701f15;
+	background-image: url( 'http://aj.creativeproductionsgroup.com/wp-content/uploads/2015/07/triangle.jpg' );
+	background-repeat: no-repeat;
+	background-position: center bottom;
 }
 
 nav li:last-child {
@@ -256,10 +260,12 @@ nav li:last-child {
 
 #arrow {
     background-image: url( 'http://aj.creativeproductionsgroup.com/wp-content/uploads/2015/07/triangle.jpg' );
-    background-size: 25px 20px;
-    height: 16px;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+    height: 10px;
     width: 22px;
-    margin-bottom: 0px;
+    z-index: 5;
+    margin-top: -10px;
     display: none;
 }
 
@@ -624,7 +630,7 @@ span.plus {
 
 .eis-button {
 	position: absolute;
-	padding: 3px 35px;
+	padding: 3px 22px;
 	z-index: 2;
 	border: 1px solid #701f15;
 	top: 72%;
@@ -840,7 +846,7 @@ span.plus {
 }
 
 .disclaimer {
-	padding: 50px 148px;
+	padding: 50px 88px;
 }
 
 .disclaimer p {
@@ -852,6 +858,19 @@ span.plus {
 .to-top {
 	text-align: right;
 	padding-right: 100px;
+	height: 50px;
+}
+
+.to-top p {
+	text-align: right;
+	padding-right: 0px;	
+	color: #701f15;
+	font-size: 14px;
+	display: none;
+}
+
+.to-top a {
+	text-decoration: none;
 }
 
 
@@ -1190,8 +1209,10 @@ ul.footer-location-list li {
 }
 
 .aj-footer-menu {
-	font-family: 'Montserrat', sans-serif, helvetica !important;
 	font-size: 15px;
+}
+
+.aj-footer-menu ul li a {
 	font-weight: 300;
 }
 
@@ -1203,7 +1224,7 @@ ul.footer-location-list li {
 
 .copyright {
 	text-align: center;
-	padding-left: 1%;
+	padding-left: 5%;
 }
 
 @media only screen and ( max-width: 1280px ) {

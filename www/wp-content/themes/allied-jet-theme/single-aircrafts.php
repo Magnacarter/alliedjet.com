@@ -64,7 +64,10 @@ get_header() ?>
 	wp_reset_postdata() ?>
 
 	<div class="to-top grid-100">
-		<a href="#"><img src="<?php the_field( 'top', 'options' ) ?>"></a>
+		<a href="#"><img src="<?php the_field( 'top', 'options' ) ?>">
+			<p>Return To Top</p>
+		</a>
+
 	</div>
 
 	<div class="disclaimer grid-container">
