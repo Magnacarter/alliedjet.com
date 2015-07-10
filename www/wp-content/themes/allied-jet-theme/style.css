@@ -281,6 +281,10 @@ nav li:last-child {
 	margin: 20px 0 20px 0;
 }
 
+.staff-image {
+	padding: 40px 60px;
+}
+
 .employee-image {
 	padding: 0 20px;
 }
@@ -315,8 +319,9 @@ nav li:last-child {
 	text-decoration: none;
 	color: #701f15;
 	text-align: left;
-	font-size: 13px;
+	font-size: 15px;
 	margin-top: 0px;
+	font-weight: 700;
 	-webkit-transition: color 0.5s ease;
 	-moz-transition: color 0.5s ease;
 	-o-transition: color 0.5s ease;
