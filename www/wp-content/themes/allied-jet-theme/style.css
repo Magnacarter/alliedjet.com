@@ -372,11 +372,11 @@ nav li:last-child {
 }
 
 .service-icon img {
-	width: 100px;
+	width: 110px;
 }
 
 .service-description {
-	padding-left: 100px;
+	padding-left: 24px;
 	margin-bottom: 50px;
 }
 
