@@ -16,7 +16,26 @@
 
 	if ( $services->have_posts() ) : ?>
 
-		<?php while ( $services->have_posts() ) : $services->the_post() ?>
+		<?php $i = 0 ?>
+
+		<?php while ( $services->have_posts() ) : $services->the_post(); $i++ ?>
+
+		<?php if ( $i == 4 ) : ?>
+
+		<div class="service-content grid-container">
+
+			<div class="service-icon grid-30 grid-tablet-100">
+				<img src="<?php the_field( 'service_icon' ) ?>">
+			</div>
+
+			<div class="service-description grid-70 grid-tablet-100">
+				<h3><?php the_title() ?></h3>
+				<p><?php the_field( 'service_description' ) ?></p>
+			</div>
+
+		</div>
+
+		<?php else :?>
 
 		<div class="service-content grid-container">
 
@@ -33,7 +52,7 @@
 
 		</div>
 
-		<?php endwhile; endif ?>
+		<?php endif; endwhile; endif ?>
 
 	<?php wp_reset_postdata() ?>
 
