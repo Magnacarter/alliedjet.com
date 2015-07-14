@@ -408,7 +408,7 @@ nav li:last-child {
 }
 
 .contact-staff-wrap {
-	margin-bottom: 400px;
+	margin-bottom: 460px;
 	padding-top: 5px;
 	border-top: 8px solid #701f15;
 	border-bottom: 8px solid #701f15;
@@ -484,6 +484,15 @@ nav li:last-child {
 	-moz-transition: color 0.5s ease;
 	-o-transition: color 0.5s ease;
 	transition: color 0.5s ease;
+}
+
+@media only screen and ( max-width: 1422px ) {
+	.contact-staff-wrap {
+		margin-bottom: 400px;
+		padding-top: 5px;
+		border-top: 8px solid #701f15;
+		border-bottom: 8px solid #701f15;
+	}
 }
 
 @media only screen and ( max-width: 1280px ) {
