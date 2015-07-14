@@ -565,6 +565,7 @@ nav li:last-child {
 
 .slide h1 {
 	position: absolute;
+	padding-right: 20px;
 	top: 1%;
 	left: 11%;
 	z-index: 2;
