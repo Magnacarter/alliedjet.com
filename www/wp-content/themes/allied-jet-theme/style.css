@@ -564,7 +564,6 @@ nav li:last-child {
 }
 
 .flexslider .slides img {
-	height: 800px !important;
 	border-bottom: 9px solid #701f15;
 }
 
