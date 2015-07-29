@@ -422,6 +422,10 @@ nav li:last-child {
 	margin-bottom: 9px;
 }
 
+.sales-address p {
+	padding: 0 74px 0 0;
+}
+
 .contact-info,
 .contact-form {
 	padding: 50px 35px 0 35px;
