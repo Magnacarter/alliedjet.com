@@ -624,6 +624,12 @@ nav li:last-child {
 	}
 }
 
+@media only screen and ( max-width: 505px ) {
+	.flex-viewport {
+    	width: 100%;
+	}
+}
+
 .more-info-button a p {
 	color: #ffffff;
 	text-decoration: none;
