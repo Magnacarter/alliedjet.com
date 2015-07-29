@@ -18,16 +18,6 @@
 
 		</div>
 
-		<div class="props grid-50 mobile-grid-100">
-
-			<h4>Props</h4>
-
-			<HR WIDTH="100%" COLOR="#701f15" SIZE="2">
-
-			<?php the_field( "props" ) ?>
-
-		</div>
-
 		<div class="engines grid-50 mobile-grid-100">
 
 			<h4>Engines</h4>
