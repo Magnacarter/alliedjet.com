@@ -137,6 +137,47 @@ li {
 		float: right;
 		padding: 2% 5% 2% 0;
 	}
+
+	.header-locations .location-list {
+		padding-top: 2%;
+		padding-bottom: 2%
+	}
+}
+
+@media only screen and ( max-width: 768px ) {
+	.header-locations h4,
+	.header-locations h3 {
+		text-align: center;
+	}
+
+	.header-locations .location-list {
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 2%;
+		padding-bottom: 2%;
+		text-align: center;
+	}
+
+	.header-locations {
+    	padding: 2% 0% 2% 0;
+	}
+}
+
+@media only screen and ( max-width: 500px ) {
+	.header-locations h3 {
+		padding: 2%;
+		margin-bottom: 2%;
+		font-size: 10px;
+	}
+
+	.header-locations .location-list,
+	.header-locations h4 {
+    	display: none;
+	}
+
+	.header-logo {
+   		margin-bottom: 3%;
+	}
 }
 
 /*===================================

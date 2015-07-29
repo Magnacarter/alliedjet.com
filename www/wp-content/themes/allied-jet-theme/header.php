@@ -28,7 +28,7 @@
 
 			</nav>
 
-			<div class="header-locations grid-25 tablet-grid-33 mobile-grid-33">
+			<div class="header-locations grid-25 tablet-grid-33 mobile-grid-40">
 
 				<h3><?php the_field( 'call_today', 'options' ) ?></h3>
 
