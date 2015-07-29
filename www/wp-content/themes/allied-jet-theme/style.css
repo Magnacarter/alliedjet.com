@@ -596,6 +596,34 @@ nav li:last-child {
 	text-align: center;
 }
 
+@media only screen and ( max-width: 1025px ) {
+	.slide .more-info-button {
+		top: 15%;
+	}
+}
+
+@media only screen and ( max-width: 850px ) {
+	.slide .more-info-button {
+		top: 20%;
+	}
+}
+
+@media only screen and ( max-width: 850px ) {
+	.slide h1 {
+		position: absolute;
+		padding-right: 20px;
+		font-size: 28px;
+		top: 1%;
+		left: 11%;
+		z-index: 2;
+		font-weight: bold;
+	}
+
+	.slide .more-info-button {
+		top: 24%;
+	}
+}
+
 .more-info-button a p {
 	color: #ffffff;
 	text-decoration: none;
@@ -693,10 +721,6 @@ span.plus {
 }
 
 @media only screen and ( max-width: 765px ) {
-	.flexslider .slides img {
-		height: auto !important;
-	}
-
 	.eis-image-one img,
 	.eis-image-two img {
 		height: auto;
@@ -722,17 +746,9 @@ span.plus {
 		border-bottom: none;
 		border-top: none;
 	}
-
-	.slide .more-info-button {
-		top: 23%;
-	}
 }
 
 @media only screen and ( max-width: 531px ) {
-	.slide h1 {
-		font-size: 29px;
-	}
-
 	.eis-content-wrap {
 		border-top: none;
 	}
@@ -847,7 +863,7 @@ span.plus {
 .engines,
 .props,
 .airframe {
-	padding: 20px 100px;
+	padding: 8px 100px;
 }
 
 #specs {
@@ -867,6 +883,7 @@ span.plus {
 }
 
 #specs p {
+	margin: 3px 0px;
 	text-align: left;
 	color: #701f15;
 	font-size: 14px;
@@ -1333,11 +1350,5 @@ ul.footer-location-list li {
 
 	.hamburger {
 		display: block;
-	}
-}
-
-@media only screen and ( max-width : 700px ) {
-	.slides img {
-		margin-left: 0px;
 	}
 }
