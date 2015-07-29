@@ -1,8 +1,15 @@
 <?php
-/*
+/**
  * page
  */
 get_header() ?>
+
+	<!-- Services Page -->
+	<?php if( is_page( 'services' ) ) : ?> 
+
+		<?php get_template_part( 'serve' ) ?>
+
+	<?php endif ?>
 
 	<!-- Our Company Page -->
 	<?php if ( is_page( 'our-company' ) ) : ?>

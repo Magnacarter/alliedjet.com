@@ -4,15 +4,6 @@
  */
 get_header() ?>
 
-	<!-- Services Page -->
-	<? if( is_page() == 'services' ) : ?>
-	<?php get_template_part( 'serve' ) ?>
-	<style type="text/css">
-		.general-content {
-			display: none;
-		}
-	</style>
-
 	<section id="index-page-content grid-container">
 
 		<div class="general-content grid-100">
