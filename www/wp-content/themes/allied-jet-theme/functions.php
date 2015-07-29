@@ -36,33 +36,6 @@ if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page();
 }
 
-// Add Jetpack share buttons above post
-remove_filter( 'the_content', 'sharing_display', 19 );
-remove_filter( 'the_excerpt', 'sharing_display', 19 );
-
-/**
- * Add Jetpack Sharing buttons above the content
- *
- * @add_filter the_content
- * @add_filter the_excerpt
- *
- * @return void
- */
-function barebones_share_buttons_above_post( $content = '' ) {
-	if ( function_exists( 'sharing_display' ) ) {
-		return sharing_display() . $content;
-	} else {
-		return $content;
-	}
-}
-add_filter( 'the_content', 'barebones_share_buttons_above_post', 19 );
-add_filter( 'the_excerpt', 'barebones_share_buttons_above_post', 19 );
-
-/**
- * Add post thumbnail support
- */
-add_theme_support( 'post-thumbnails' );
-
 /**
  * Set up our theme features and register sidebars
  *
@@ -70,9 +43,12 @@ add_theme_support( 'post-thumbnails' );
  *
  * @return void
  */
-function barebones_after_setup_theme() {
+function ajs_after_setup_theme() {
 	// Custom menus
 	add_theme_support( 'menus' );
+
+	// Post thumbnail support
+	add_theme_support( 'post-thumbnails' );
 
 	// Sidebar areas
 	register_sidebar(
@@ -87,4 +63,4 @@ function barebones_after_setup_theme() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'barebones_after_setup_theme' );
+add_action( 'after_setup_theme', 'ajs_after_setup_theme' );

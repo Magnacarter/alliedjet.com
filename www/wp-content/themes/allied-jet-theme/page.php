@@ -11,13 +11,6 @@ get_header() ?>
 
 	<?php endif ?>
 
-	<!-- Services Page -->
-	<?php if ( is_page( 'http://local.alliedjet.com/services/' ) ) : ?>
-
-		<?php get_template_part( 'serve' ) ?>
-
-	<?php endif ?>
-
 	<!-- Contact Page -->
 	<?php if ( is_page( 'contact-us' ) ) : ?>
 
