@@ -19,21 +19,6 @@ get_header() ?>
 
 	<?php endif ?>
 
-	<!-- Services Page -->
-	<?php if ( is_page( 'services' ) ) : ?>
-
-		<style type="text/css">
-
-			.general-content {
-				display: none;
-			}
-
-		</style>
-
-		<?php get_template_part( 'services' ) ?>
-
-	<?php endif ?>
-
 	<!-- Contact Page -->
 	<?php if ( is_page( 'contact-us' ) ) : ?>
 
