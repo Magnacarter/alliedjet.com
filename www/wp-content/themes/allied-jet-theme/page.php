@@ -5,7 +5,7 @@
 get_header() ?>
 
 	<!-- Services Page -->
-	<?php if ( is_page( 'service' ) ) : ?> 
+	<?php if ( is_page( 'services' ) ) : ?> 
 
 		<?php get_template_part( 'serve' ) ?>
 

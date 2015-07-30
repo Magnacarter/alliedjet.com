@@ -82,19 +82,19 @@ add_action( 'init', 'aji_employees' );
  */
 function aji_services() {
 	$labels = array(
-		'name'               => 'Services',
+		'name'               => 'Service',
 		'singular_name'      => 'service',
 		'add_new'            => 'Add New',
-		'add_new_item'       => 'Add New services',
-		'edit_item'          => 'Edit services',
-		'new_item'           => 'New services',
-		'all_items'          => 'All services',
-		'view_item'          => 'View services',
-		'search_items'       => 'Search services',
+		'add_new_item'       => 'Add New service',
+		'edit_item'          => 'Edit service',
+		'new_item'           => 'New service',
+		'all_items'          => 'All service',
+		'view_item'          => 'View service',
+		'search_items'       => 'Search service',
 		'not_found'          => 'No event found',
 		'not_found_in_trash' => 'No event found in Trash',
 		'parent_item_colon'  => '',
-		'menu_name'          => 'Services',
+		'menu_name'          => 'Service',
 	);
 
 	$args = array(
@@ -104,7 +104,7 @@ function aji_services() {
 		'show_ui'            => true,
 		'show_in_menu'       => true,
 		'query_var'          => true,
-		'rewrite'            => array( 'slug' => 'services' ),
+		'rewrite'            => array( 'slug' => 'service' ),
 		'capability_type'    => 'post',
 		'taxonomies'         => array( 'category' ),
 		'has_archive'        => true,
