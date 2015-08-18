@@ -477,6 +477,7 @@ nav li:last-child {
 }
 
 .contact-info p {
+	margin-top: 10px;
 	margin-bottom: 10px;
 	font-size: 13px;
 	font-weight: 700;
