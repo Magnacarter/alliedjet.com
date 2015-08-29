@@ -18,7 +18,7 @@
 
 				<div class="sales-email grid-50">
 					<h4>Email:</h4>
-					<p><a href="mailto:sales@alliedjet.com" target="_blank"><?php the_field( 'sales_email', 'options' ) ?></a></p>
+					<p><?php the_field( 'sales_email', 'options' ) ?></p>
 				</div>
 
 				<div class="sales-fax grid-50">
