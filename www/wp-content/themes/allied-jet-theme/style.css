@@ -444,6 +444,10 @@ nav li:last-child {
 	color: #701f15;
 }
 
+.contact-info:first-child {
+	padding-top: 10px;
+}
+
 .contact-content-wrap {
 	background-color: #ebebeb;
 }
