@@ -532,7 +532,7 @@ nav li:last-child {
 	transition: color 0.5s ease;
 }
 
-@media only screen and ( max-width: 1422px ) {
+@media only screen and ( max-width: 1428px ) {
 	.contact-staff-wrap {
 		margin-bottom: 400px;
 		padding-top: 5px;
