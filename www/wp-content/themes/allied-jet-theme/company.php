@@ -35,7 +35,7 @@
 				</div>
 
 				<div class="email grid-25">
-					<a href="mailto:<?php the_field( 'email' ) ?>"><p><?php the_field( 'email' ) ?></p></a>
+					<p><?php the_field( 'email' ) ?></p>
 				</div>
 
 				<div class="grid-100">
