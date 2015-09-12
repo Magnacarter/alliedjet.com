@@ -63,7 +63,7 @@
 					<img src="<?php the_field( 'employee_image' ) ?>">
 					<h3><?php the_title() ?></h3>
 					<p><?php the_field( 'phone_number' ) ?></p>
-					<a href="mailto:<?php the_field( 'email' ) ?>"><p><?php the_field( 'email' ) ?></p></a>
+					<p><?php the_field( 'email' ) ?></p>
 				</div>
 
 			<?php endwhile; endif ?>
