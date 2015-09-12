@@ -658,8 +658,10 @@ nav li:last-child {
 	}
 }
 
-@media only screen and ( max-width: 1025px ) {
-
+@media only screen and ( max-width: 928px ) {
+	.slide .more-info-button {
+		top: 29%;
+	}
 }
 
 @media only screen and ( max-width: 850px ) {
