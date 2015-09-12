@@ -688,6 +688,12 @@ nav li:last-child {
 	}
 }
 
+@media only screen and ( max-width: 458px ) {
+	.slide .more-info-button {
+		top: 39%;
+	}
+}
+
 .more-info-button a p {
 	color: #ffffff;
 	text-decoration: none;
