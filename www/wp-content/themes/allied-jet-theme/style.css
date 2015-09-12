@@ -444,7 +444,7 @@ nav li:last-child {
 	color: #701f15;
 }
 
-.contact-info:first-child {
+.contact-info p:first-child {
 	padding-top: 30px;
 }
 
